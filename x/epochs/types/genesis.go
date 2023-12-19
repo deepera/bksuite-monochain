@@ -26,9 +26,9 @@ func DefaultGenesisState() *GenesisState {
 			EpochCountingStarted:    false,
 		},
 		{
-			Identifier:              DayEpochID,
+			Identifier:              MinuteEpochID,
 			StartTime:               time.Time{},
-			Duration:                time.Hour * 24,
+			Duration:                time.Second * 60,
 			CurrentEpoch:            0,
 			CurrentEpochStartHeight: 0,
 			CurrentEpochStartTime:   time.Time{},
